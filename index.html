@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Global By natan | Business Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(30, 64, 175, 0.95) 100%);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+
+        .stats-item {
+            border-left: 3px solid var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <span class="text-2xl font-bold text-indigo-600">GROW A GARDEN BY NATAN </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Services</a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Solutions</a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">About</a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Contact</a>
+                    <a href="#" class="bg-indigo-600 text-white px-6 py-2 rounded-md font-medium hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Services</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Solutions</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">About</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="hero-content md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                        Grow a garden 
+                    </h1>
+                    <p class="text-xl mb-8 text-indigo-100">
+                        bekerja dengan menjadi petani untuk mendapatkan profit yang besar.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="btn-primary px-8 py-3 rounded-md font-semibold">
+                            Get Started
+                        </a>
+                        <a href="#" class="bg-white text-indigo-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="RobloxScreenShot20250607_203402506.png"Business team analyzing data on digital dashboard with graphs and analytics" class="rounded-lg shadow-xl" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-gray-500 text-sm font-semibold mb-8">kepercayan pada petani kami </h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="flex justify-center items-center">
+                    <img src="RobloxScreenShot20250608_175921182.png" alt="TechCorp logo with futuristic blue typography" class="h-10 opacity-60 hover:opacity-100 transition duration-300" />
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="RobloxScreenShot20250608_175921182.png" alt="FinBank logo with green financial symbol" class="h-10 opacity-60 hover:opacity-100 transition duration-300" />
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="RobloxScreenShot20250608_175921182.png" alt="GlobalSoft logo with minimalist black design" class="h-10 opacity-60 hover:opacity-100 transition duration-300" />
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="RobloxScreenShot20250608_175921182.png" alt="InnovaTech logo with orange gradient" class="h-10 opacity-60 hover:opacity-100 transition duration-300" />
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="RobloxScreenShot20250608_175921182.png" class="h-10 opacity-60 hover:opacity-100 transition duration-300" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive solutions designed to address your unique business requirements.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Custom Software Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Tailor-made applications designed to streamline your business operations and increase efficiency.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-indigo-600 font-medium group">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-5 w-5 group-hover:translate-x-1 transition duration-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">IT Consulting Services</h3>
+                    <p class="text-gray-600 mb-6">
+                        Expert guidance to help you navigate complex technological decisions with confidence.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-indigo-600 font-medium group">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-5 w-5 group-hover:translate-x-1 transition duration-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8                         "Their digital marketing strategies have significantly increased our online visibility."
+                    </p>
+                    <h4 class="font-bold text-gray-900"></h4>
+                    <p class="text-gray-500"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">berteman dengan kami di roblox</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Ready to take your grow a garden business to the next level? Contact us today!
+                </p>
+            </div>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <div class="grid grid-cols-1 gap-6">
+                    <input type="text" name="name" placeholder="Your Name" required class="border border-gray-300 rounded-md p-4">
+                    <input type="email" name="email" placeholder="Your Email" required class="border border-gray-300 rounded-md p-4">
+                    <textarea name="message" rows="4" placeholder="Your Message" required class="border border-gray-300 rounded-md p-4"></textarea>
+                    <button type="submit" class="btn-primary px-6 py-3 rounded-md font-semibold w-full">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>grow a garden by natan 2025.</p>
+        </div>
+    </footer>
+</body>
+</html>
